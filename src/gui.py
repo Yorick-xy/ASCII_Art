@@ -58,14 +58,14 @@ def create_gui():
 
     global width_entry
     width_entry = tk.Entry(width_frame, width=10)
-    width_entry.insert(0, "100")  # Largeur par défaut
+    width_entry.insert(0, "200")  # Largeur par défaut
     width_entry.pack(side="left", padx=5)
 
     # Bouton pour générer l'ASCII
     generate_button = tk.Button(root, text="Générer l'ASCII", command=generate_ascii)
     generate_button.pack(pady=10)
 
-    # Zone de texte pour afficher l'art ASCII, inversée (fond sombre, texte clair)
+    # Zone de texte pour afficher l'art ASCII, inversée (fond noir, texte blanc)
     global ascii_text
     ascii_text = tk.Text(root, wrap="none", bg="black", fg="white")
     ascii_text.pack(fill="both", expand=True, padx=10, pady=10)
